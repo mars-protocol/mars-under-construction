@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <title>Mars</title>
     <link
@@ -29,26 +30,6 @@
         -moz-osx-font-smoothing: grayscale;
         margin: 0;
       }
-      .m {
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-      .a {
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-      .r {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-      }
-      .s {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-      }
       .logo-container {
         position: absolute;
         top: 2rem;
@@ -59,9 +40,12 @@
       .footer-container {
         position: absolute;
         bottom: 1rem;
-        padding: 2rem auto;
+        padding: 2rem;
         width: 100%;
         text-align: center;
+      }
+      .footer-container a {
+        text-decoration: none;
       }
       .text-center {
         position: absolute;
@@ -72,24 +56,24 @@
         color: white;
       }
       .text-main {
-        font-size: 32px;
-        font-weight: 600;
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 2px;
       }
       .text-secondary {
+        font-size: 20px;
         color: #ccc;
         line-height: 1.75;
       }
       .terra {
-        height: 24px;
-        width: 24px;
-        margin-left: 5px;
+        height: 26px;
+        width: 26px;
+        margin-left: 6px;
         transform: translateY(5px);
       }
     </style>
   </head>
   <body>
-    <img class="m" src="assets/M.png" />
-    <img class="a" src="assets/A.png" />
     <div class="logo-container">
       <img class="logo" src="assets/logo.png" />
     </div>
@@ -103,8 +87,6 @@
         Built on <img class="terra" src="assets/terra.svg" /> Terra
       </p>
     </div>
-    <img class="r" src="assets/R.png" />
-    <img class="s" src="assets/S.png" />
     <div class="footer-container">
       <a href="https://T.me/martiannews">
         <img src="assets/telegram.png" />
